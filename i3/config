@@ -186,8 +186,7 @@ bar {
 }
 
 exec_always feh --bg-scale ~/Pictures/hueco_mundo.jpg
-exec xrandr --output HDMI-0 --mode 1920x1080 --rate 74.99 --primary
-exec --no-startup-id openrgb --startminimized --profile "standardica"
+exec --no-startup-id openrgb --profile "standardica"
 exec --no-startup-id xsettingsd
 exec --no-startup-id setxkbmap -layout us,rs -option grp:alt_shift_toggle
 
