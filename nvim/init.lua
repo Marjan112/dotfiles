@@ -9,7 +9,7 @@ vim.o.clipboard = "unnamedplus"
 
 vim.o.termguicolors = true
 
-vim.cmd.colorscheme("sorbet")
+vim.cmd.colorscheme("habamax")
 
 -- vim.cmd([[
 --     highlight Normal ctermbg=none guibg=none
