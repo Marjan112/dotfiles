@@ -11,8 +11,5 @@ vim.o.termguicolors = true
 
 vim.cmd.colorscheme("habamax")
 
--- vim.cmd([[
---     highlight Normal ctermbg=none guibg=none
---     highlight NormalNC ctermbg=none guibg=none
---     highlight EndOfBuffer ctermbg=none guibg=none
--- ]])
+require("nvim-tree").setup()
+require("neogit").setup()
