@@ -11,5 +11,12 @@ vim.o.termguicolors = true
 
 vim.cmd.colorscheme("habamax")
 
+vim.cmd [[
+    highlight Normal guibg=none
+    highlight NonText guibg=none
+    highlight Normal ctermbg=none
+    highlight NonText ctermbg=none
+]]
+
 require("nvim-tree").setup()
 require("neogit").setup()
