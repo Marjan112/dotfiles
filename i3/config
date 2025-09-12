@@ -186,11 +186,12 @@ bar {
 }
 
 exec --no-startup-id picom
-exec --no-startup-id xwinwrap -ov -g 2560x1440+0+0 -- mpv -wid WID ~/Pictures/mugetsu_live.gif --no-osc --no-osd-bar --loop-file --player-operation-mode=cplayer --no-audio --panscan=1.0 --no-input-default-bindings &
 exec --no-startup-id openrgb --profile "standardica"
 exec --no-startup-id xsettingsd
 exec --no-startup-id setxkbmap -layout us,rs -option grp:alt_shift_toggle
 exec --no-startup-id parcellite
+
+include ~/.config/i3/wallpaper.conf
 
 focus_follows_mouse no
 hide_edge_borders both
