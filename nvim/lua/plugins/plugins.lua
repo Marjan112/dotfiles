@@ -13,7 +13,14 @@ return {
       servers = {
         rust_analyzer = {
           settings = {
-            ["rust-analyzer"] = { inlayHints = { enable = false } },
+            ["rust-analyzer"] = {
+              inlayHints = {
+                parameterHints = { enable = false },
+                typeHints = { enable = false },
+                chainingHints = { enable = false },
+                maxLength = 0,
+              },
+            },
           },
         },
       },
