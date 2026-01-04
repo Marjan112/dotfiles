@@ -6,5 +6,6 @@ My personal dotfiles.
 
 ## References
 
+- https://github.com/rexim/dotfiles
 - https://github.com/orangci/walls-catppuccin-mocha
 - https://github.com/catppuccin/alacritty
