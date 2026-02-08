@@ -1,5 +1,9 @@
 return {
   {
+    "MeanderingProgrammer/render-markdown.nvim",
+    enabled = false
+  },
+  {
     "NeogitOrg/neogit",
     dependencies = {
       "nvim-lua/plenary.nvim",
@@ -10,7 +14,17 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = {
-      inlay_hints = {enabled = false}
+      inlay_hints = {enabled = false},
+      servers = {
+        arduino_language_server = {
+          cmd = {
+            "arduino-language-server",
+            "-cli-config", vim.fn.expand("~/.arduino15/arduino-cli.yaml"),
+            "-fqbn", "arduino:avr:uno",
+          },
+          filetypes = { "arduino" }
+        }
+      }
     },
   },
   {
@@ -41,5 +55,5 @@ return {
       require("catppuccin").setup(opts)
       vim.cmd("colorscheme catppuccin")
     end
-  }
+  },
 }
