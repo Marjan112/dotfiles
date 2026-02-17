@@ -225,5 +225,5 @@ gaps inner 7px
 gaps outer 2px
 
 # Clipboard Screenshots
-bindsym Print exec --no-startup-id maim | xclip -selection clipboard -t image/png
-bindsym Ctrl+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
+bindsym Print exec --no-startup-id maim -g "$(xrandr | awk '/ primary/{print $4}')" ~/Pictures/Screenshots/$(date +%F-%H-%M-%S).png
+bindsym Ctrl+Print exec --no-startup-id maim --select ~/Pictures/Screenshots/$(date +%F-%H-%M-%S).png
