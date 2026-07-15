@@ -207,7 +207,7 @@ exec --no-startup-id picom
 exec --no-startup-id xsettingsd
 exec --no-startup-id setxkbmap -layout us,rs -option grp:alt_shift_toggle
 exec --no-startup-id gxkb
-exec --no-startup-id parcellite
+exec --no-startup-id copyq
 
 focus_follows_mouse no
 # hide_edge_borders both
@@ -226,4 +226,4 @@ gaps outer 2px
 
 # Clipboard Screenshots
 bindsym Print exec --no-startup-id maim -g "$(xrandr | awk '/ primary/{print $4}')" ~/Pictures/Screenshots/$(date +%F-%H-%M-%S).png
-bindsym Ctrl+Print exec --no-startup-id maim --select ~/Pictures/Screenshots/$(date +%F-%H-%M-%S).png
+bindsym Ctrl+Print exec --no-startup-id maim -s | xclip -selection clipboard -t image/png
