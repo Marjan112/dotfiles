@@ -2,9 +2,22 @@ return {
   "olimorris/codecompanion.nvim",
   dependencies = {
     "nvim-lua/plenary.nvim",
-    "nvim-treesitter/nvim-treesitter"
+    "nvim-treesitter/nvim-treesitter",
   },
   opts = {
+    rules = {
+      default = {
+        description = "Project rules",
+        files = {
+          "AGENTS.md",
+        }
+      },
+      opts = {
+        chat = {
+          autoload = "default"
+        }
+      }
+    },
     adapters = {
       http = {
         qwen = function()
