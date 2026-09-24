@@ -6,6 +6,6 @@ return {
   cmd = "Telescope",
   keys = {
     { '<leader>ff', "<cmd>Telescope find_files<cr>", desc = 'Telescope find files' },
-    { '<leader>fg', "<cmd>Telescope find_grep<cr>", desc = 'Telescope live grep' }
+    { '<leader>fg', "<cmd>Telescope live_grep<cr>", desc = 'Telescope live grep' }
   }
 }
